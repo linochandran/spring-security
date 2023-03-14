@@ -1,0 +1,6 @@
+
+spring:
+  datasource:
+    url: jdbc:postgresql://postgres_db:5432/expense_db
+server:
+  port: 9090

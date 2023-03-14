@@ -1,0 +1,19 @@
+version: "3.9"
+
+networks:
+  backend:
+    name: backend
+    driver: bridge
+    external: true
+
+services:
+  spring-security:
+    container_name: spring-security
+    image: spring-security:0.0.1
+    restart: on-failure
+    environment:
+      - SPRING_PROFILES_ACTIVE = docker
+    networks:
+      - backend
+    ports:
+      - 9090:9090
