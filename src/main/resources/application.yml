@@ -2,7 +2,7 @@ spring:
   application:
     name: Expense Tracker
   datasource:
-    url: jdbc:postgresql://localhost:5432/expense_db
+    url: jdbc:postgresql://172.19.0.2:5432/expense_db
     username: postgres
     password: password
     driver-class-name: org.postgresql.Driver
@@ -16,5 +16,5 @@ spring:
     database: postgresql
     database-platform: org.hibernate.dialect.PostgreSQLDialect
   profiles:
-    active: local
+    active: default
 
